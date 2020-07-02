@@ -31,7 +31,7 @@ int main()
 {
 	g_Discord->Init();
 	g_Discord->Update("Lobby", std::chrono::duration_cast<std::chrono::seconds>(std::chrono::system_clock::now().time_since_epoch()).count(), NULL);
-	cout << "VALORANT RPC by BaconToaster#5317" << endl;
+	SetConsoleTitle(L"VALORANT RPC by BaconToaster#5317");
 	cout << "What state do you want(read readme.txt)" << endl;
 	std::thread t1(checkKeyPress);
 	t1.detach();
@@ -44,7 +44,6 @@ int main()
 			{
 				idiot = "";
 				system("cls");
-				cout << "VALORANT RPC by BaconToaster#5317" << endl;
 				g_Discord->Update("Competetive", std::chrono::duration_cast<std::chrono::seconds>(std::chrono::system_clock::now().time_since_epoch()).count(), NULL);
 				cout << "What state do you want(read readme.txt)" << endl;
 				cin >> idiot;
@@ -53,7 +52,6 @@ int main()
 			{
 				idiot = "";
 				system("cls");
-				cout << "VALORANT RPC by BaconToaster#5317" << endl;
 				g_Discord->Update("Unrated", std::chrono::duration_cast<std::chrono::seconds>(std::chrono::system_clock::now().time_since_epoch()).count(), NULL);
 				cout << "What state do you want(read readme.txt)" << endl;
 				cin >> idiot;
@@ -62,7 +60,6 @@ int main()
 			{
 				idiot = "";
 				system("cls");
-				cout << "VALORANT RPC by BaconToaster#5317" << endl;
 				oldEtime = std::chrono::duration_cast<std::chrono::seconds>(std::chrono::system_clock::now().time_since_epoch()).count();
 				g_Discord->Update("Competetive", oldEtime, "0-0");
 				oldLilFucker = lilFucker;
@@ -74,7 +71,6 @@ int main()
 						g_Discord->Update("Competetive", oldEtime, lilFucker.c_str());
 						oldLilFucker = lilFucker;
 						system("cls");
-						cout << "VALORANT RPC by BaconToaster#5317" << endl;
 						cin >> lilFucker;
 					}
 				}
@@ -82,7 +78,6 @@ int main()
 				oldLilFucker = "";
 				oldEtime = 0;
 				system("cls");
-				cout << "VALORANT RPC by BaconToaster#5317" << endl;
 				cout << "What state do you want(read readme.txt)" << endl;
 				cin >> idiot;
 			}
@@ -90,7 +85,6 @@ int main()
 			{
 				idiot = "";
 				system("cls");
-				cout << "VALORANT RPC by BaconToaster#5317" << endl;
 				oldEtime = std::chrono::duration_cast<std::chrono::seconds>(std::chrono::system_clock::now().time_since_epoch()).count();
 				g_Discord->Update("Unrated", oldEtime, "0-0");
 				oldLilFucker = lilFucker;
@@ -102,7 +96,6 @@ int main()
 						g_Discord->Update("Unrated", oldEtime, lilFucker.c_str());
 						oldLilFucker = lilFucker;
 						system("cls");
-						cout << "VALORANT RPC by BaconToaster#5317" << endl;
 						cin >> lilFucker;
 					}
 				}
@@ -110,7 +103,6 @@ int main()
 				oldLilFucker = "";
 				oldEtime = 0;
 				system("cls");
-				cout << "VALORANT RPC by BaconToaster#5317" << endl;
 				cout << "What state do you want(read readme.txt)" << endl;
 				cin >> idiot;
 			}
@@ -119,7 +111,47 @@ int main()
 				idiot = "";
 				g_Discord->Update("Lobby", std::chrono::duration_cast<std::chrono::seconds>(std::chrono::system_clock::now().time_since_epoch()).count(), NULL);
 				system("cls");
-				cout << "VALORANT RPC by BaconToaster#5317" << endl;
+				cout << "What state do you want(read readme.txt)" << endl;
+				cin >> idiot;
+			}
+			else if (idiot == "spikerush")
+			{
+				idiot = "";
+				system("cls");
+				g_Discord->Update("Spike Rush", std::chrono::duration_cast<std::chrono::seconds>(std::chrono::system_clock::now().time_since_epoch()).count(), NULL);
+				cout << "What state do you want(read readme.txt)" << endl;
+				cin >> idiot;
+			}
+			else if (idiot == "spikerushc")
+			{
+				idiot = "";
+				system("cls");
+				oldEtime = std::chrono::duration_cast<std::chrono::seconds>(std::chrono::system_clock::now().time_since_epoch()).count();
+				g_Discord->Update("Spike Rush", oldEtime, "0-0");
+				oldLilFucker = lilFucker;
+				cin >> lilFucker;
+				while (lilFucker != "stop")
+				{
+					if (lilFucker != oldLilFucker)
+					{
+						g_Discord->Update("Spike Rush", oldEtime, lilFucker.c_str());
+						oldLilFucker = lilFucker;
+						system("cls");
+						cin >> lilFucker;
+					}
+				}
+				lilFucker = "";
+				oldLilFucker = "";
+				oldEtime = 0;
+				system("cls");
+				cout << "What state do you want(read readme.txt)" << endl;
+				cin >> idiot;
+			}
+			else if (idiot == "practice")
+			{
+				idiot = "";
+				system("cls");
+				g_Discord->Update("Practicing", std::chrono::duration_cast<std::chrono::seconds>(std::chrono::system_clock::now().time_since_epoch()).count(), NULL);
 				cout << "What state do you want(read readme.txt)" << endl;
 				cin >> idiot;
 			}
@@ -127,7 +159,6 @@ int main()
 			{
 				idiot = "";
 				system("cls");
-				cout << "VALORANT RPC by BaconToaster#5317" << endl;
 				cout << "That's not a valid state" << endl;
 				cout << "What state do you want(read readme.txt)" << endl;
 				cin >> idiot;
