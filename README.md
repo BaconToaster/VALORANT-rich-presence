@@ -20,5 +20,14 @@ The states(all letters mustn't be capital):
 * unrankedc or unratedc:
 	shows that ur playing Unrated, you have to type the match stats for example 9-5. To leave the score editing mode type "stop" and then you can set a new mode
 
+* spikerush:
+	shows that ur playing Spike Rush, no match stats
+
+* spikerushc:
+	shows that ur playing Spike Rush, you have to type the match stats like in unrankedc and rankedc
+
+* practice:
+	says that ur practicing
+
 * lobby:
 	says that ur in lobby
