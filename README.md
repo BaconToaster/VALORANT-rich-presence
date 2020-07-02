@@ -1,4 +1,4 @@
-# VALORANT-rich-presence
+# VALORANT rich presence
 A VALORANT rich presence for Discord
 
 1. Start the rpc
